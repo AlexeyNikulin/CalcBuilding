@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+a {
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.calc-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.calc-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.calc-wrapper {
+    border: 1px solid black;
+}
+
+.subtitle {
+    margin: 15px 0 15px 0;
+    color: blue;
+}
+
+.calc-wrapper .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: blue;
+}
+
+.calc-wrapper ul li {
+    text-align: left;
+}
+
+.calc-wrapper ul li a {
+    color: green;
+    cursor: pointer;
+}
+
+.btn-cancel,
+.btn-next,
+.btn-calc,
+.btn-new-calc {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-new-calc {
+    width: 120px;
+}
+
+.calc-wrapper .floors {
+    margin: 25px 0 25px 0;
+    width: 100px;
+    height: 20px;
+    outline: none;
+}
+
+.calc-wrapper .success {
+    margin: 15px 0 15px 0;
+    color: green;
+}
+
+.calc-wrapper .error {
+    margin: 15px 0 15px 0;
+    color: red;
+}
+
+.mult {
+    margin: 0 10px 0 10px;
 }
